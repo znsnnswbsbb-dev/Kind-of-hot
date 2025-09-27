@@ -267,7 +267,7 @@
 
         if (error) {
           console.error("Supabase error:", error);
-          alert("❌ Failed to save profile. Please try again.");
+          alert("❌ Error: " + (error.message || error));
           return;
         }
 
